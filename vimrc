@@ -6,6 +6,7 @@ else
 endif
 
 Plug 'vim-syntastic/syntastic'
+Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 
@@ -25,7 +26,7 @@ set nocompatible
 " located in ~/.vim/colors/
 set term=builtin_ansi
 syntax on
-colorscheme solarized
+colorscheme obsidian2
 
 " Line Wraps - nowrap for code, linewraps for LaTeX / Markdown
 set nowrap
