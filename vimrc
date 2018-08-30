@@ -1,6 +1,13 @@
-call plug#begin('~/.vim/plugged')
+" vim-plug settings
+if has('win32') || has('win64')
+    call plug#begin('~/vimfiles/plugged')
+else
+    call plug#begin('~/.vim/plugged')
+endif
+
 Plug 'vim-syntastic/syntastic'
 call plug#end()
+
 
 " Detect filetype for syntax highlighting
 filetype on
@@ -39,6 +46,3 @@ let @u= '02xj'               " Universal Uncommenting (u)
 
 let @2= '0i  j'            " 2 Space indent (2)
 let @4= '0i    j'          " 4 space indent (4)
-
-
-
