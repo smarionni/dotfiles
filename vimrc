@@ -5,8 +5,10 @@ else
     call plug#begin('~/.vim/plugged')
 endif
 
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
+
 call plug#end()
 
 
