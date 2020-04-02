@@ -1,3 +1,4 @@
 {
-    "sql-formatter.uppercase": true
+    "sql-formatter.uppercase": true,
+    "vscode-neovim.neovimPath": "/usr/local/bin/nvim"
 }

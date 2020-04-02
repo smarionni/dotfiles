@@ -1,16 +1,19 @@
 " vim-plug settings
-if has('win32') || has('win64')
-    call plug#begin('~/vimfiles/plugged')
-else
-    call plug#begin('~/.vim/plugged')
+
+if !has('nvim') && !exists('g:vscode')
+
+    if has('win32') || has('win64')
+        call plug#begin('~/vimfiles/plugged')
+    else
+        call plug#begin('~/.vim/plugged')
+    endif
+
+    " Plug 'vim-syntastic/syntastic'
+    Plug 'w0rp/ale'
+    Plug 'flazz/vim-colorschemes'
+
+    call plug#end()
 endif
-
-" Plug 'vim-syntastic/syntastic'
-Plug 'w0rp/ale'
-Plug 'flazz/vim-colorschemes'
-
-call plug#end()
-
 
 " Detect filetype for syntax highlighting
 filetype on
